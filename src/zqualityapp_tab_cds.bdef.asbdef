@@ -1,0 +1,33 @@
+managed implementation in class zbp_qualityapp_tab_cds unique;
+strict ( 2 );
+
+define behavior for ZQUALITYAPP_TAB_CDS //alias <alias_name>
+persistent table zqualityapp_tab
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  //  field ( readonly ) Productionorder, Orderoperation;
+
+  mapping for zqualityapp_tab
+    {
+      Productionorder = productionorder;
+      Orderoperation  = orderoperation;
+      Salesorder      = salesorder;
+      Salesorderitem  = salesorderitem;
+      Lotnumber       = lotnumber;
+      Material        = material;
+      Materialdes     = materialdes;
+      Status          = status;
+      StatusCode      = statuscode;
+      Remark          = Remark;
+      PostingDate     = postingdate;
+      Creationdate    = creationdate;
+      Creationtime    = creationtime;
+      Creationuser    = creationuser;
+    }
+
+}

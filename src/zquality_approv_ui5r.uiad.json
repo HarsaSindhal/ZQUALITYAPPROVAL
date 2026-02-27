@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Quality Approval"
+  },
+  "ui5AppDetails": {
+    "appId": "zqualityapproval"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_FB6C496242167616A411692AE3A90049E8FC44FC_TM",
+    "semanticObject": "zquality_approval_6",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_FB6C496242167616A411692AE3A90049E8FC44FC_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Quality Approval",
+        "subtitle": "PP"
+      }
+    }
+  ]
+}
